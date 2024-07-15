@@ -53,14 +53,70 @@ what is python:
 - high level
 - portables
 
-python character set
+python character set:
 - letters: a to z, A to Z
 - digits: 0 - 9
 - specail symbols: -, +, *, / etc..
 - whitespaces: blank space, tab, carriage, return, newline, formed
 - other characters: python can process all ASC II and unicode characters as part of fata or literals
 
+variables: 
+- a variable is a name given to a memory location in a program
+  name = "ananyaa"
+  age = 17
+  price = 1,986
 
+memory: 
+ _________________________________________________
+|       age     price           name             |     
+|       17      1,986          ananyaa           |
+_________________________________________________
+name = "ananyaa"
+age = 17          --> integer
+price = 25.99     --> floating value
 
+***code 1***
+name = "ananyaa"
+age = 17
+price = 25.99
 
+print(name)                 print("name")
+output: ananyaa             output: name
 
+***code 2***
+name = "ananyaa"
+age = 17
+price = 25.99
+print("my name is: ", name)
+print("my age is: ", age)
+
+output: my name is: ananyaa
+        my age is: 17
+
+= is an assignemnt operator
+
+rules for identifiers
+1. identifiers can be combination of uppercase and lowercase letters, digits or an underscore (_).
+   so myVariable, variable_1, variable_for_print all are valid python identifiers
+2. an identifier can not start with digit. so while variable1 is valid, 1variable is not valid
+3. we can't use special symbols like !, #, @, %, $ etc... in our identifiers
+4. identifiers can be of any length
+
+data types
+***code 3***
+name = "ananyaa"
+age = 17
+price = 25.99
+
+print(type(name))
+print(type(age))
+print(type(price))
+
+output: <class 'str'>
+        <class 'int'>
+        <class 'float'>
+
+***code 4***
+- integers: +ve, -ve, 0
+- string: "ananyaa", "hello"
+- float: 3.99, 2.50, 
