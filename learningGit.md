@@ -33,9 +33,13 @@ some essential things you should be aware of:
   changes, additions, and subtractions in colors (green and red).
   as soon as you have a commit, you can open a pull request and start a discussion, even before the
   code is finished.
-  a great way to learn GitHub, before working on larger projects, is to open pull requests in your own repository and merge them yourself. 
-  you merge any changes into the master by clicking a "merge pull request" button. after merging you can delete the branch by clicking a 
-  "delete branch button".
+  a great way to learn GitHub, before working on larger projects, is to open pull requests in your own
+  repository and merge them yourself. you merge any changes into the master by clicking a "merge pull
+  request" button. after merging you can delete the branch by clicking a "delete branch button".
+- git push and pull: git pull is one of many commands that claim the responsibility of 'syncing'
+  remote content. the git remote command is used to specify what remote endpoints the syncing commands
+  will operate on. the git push command is used to upload content to a remote repository. the git fetch
+  command can be confused with git pull .
 
 
 
@@ -79,4 +83,6 @@ works cited
 - https://dev.to/mahithchigurupati/github-everything-you-need-to-know-2ija
 - https://www.gitkraken.com/blog/top-10-git-commands
 - https://www.youtube.com/watch?v=A-4WltCTVms
+- https://git-scm.com/doc
+- 
 
