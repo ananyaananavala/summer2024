@@ -84,5 +84,5 @@ works cited
 - https://www.gitkraken.com/blog/top-10-git-commands
 - https://www.youtube.com/watch?v=A-4WltCTVms
 - https://git-scm.com/doc
-- https://youtu.be/DVRQoVRzMIY?si=684iX44bRKCFuEnr
+- https://youtu.be/DVRQoVRzMIY?si=684iX44bRKCFuEnr (only watched till 15:09) 
 
