@@ -5,3 +5,5 @@ print(mylist)
 
 print("the lowest number is: ", mylist[0])
 print("the highest number is: ", mylist[-1])
+
+#edit edit
