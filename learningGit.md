@@ -1,6 +1,23 @@
 github: open-source community where people around the globe work together on open source projects 
 and make contributions. 
 
+version control: version control helps, providing you clarify as to when you did it, why you did it
+and what the contents of the change were, open for review at any time in the future. 
+
+github shines when we start talking about this in the collaborative sense: you and team members trying
+to do the same thing, even worse: on the same or adjecent files. when you do that, you need something 
+much more capable than a simple revison history or a single person. you need the idea of keeping track 
+of who and when they changed it but, the capability of the tool to unify these back together in what 
+typically referred to as a merge. these action, these interleaving of you and the team members working
+on the same, similar, or adjacent files is hangeled adeptly by a full-fleged version control system like 
+that of git. 
+
+recap: 
+- git is a fast and modern implementation of version control
+- git provides a history of content changes
+- git facilitates collabarative changes to files
+- git is easy to use for any type of knowleged worker
+
 some essential things you should be aware of:
 - repositories: a GitHub repository can be used to store a development project. it can contain
   folders or any type of files (html, css, javascript, documents, data, images).a gitHub repository
@@ -60,4 +77,6 @@ some essential things you should be aware of:
 
 works cited
 - https://dev.to/mahithchigurupati/github-everything-you-need-to-know-2ija
+- https://www.gitkraken.com/blog/top-10-git-commands
+- https://www.youtube.com/watch?v=A-4WltCTVms
 
