@@ -1,5 +1,5 @@
 # print the smalles and highest value in array
-mylist = [1,6,8,4,0]
+mylist = [1, 6, 8, 4, 0]
 mylist.sort()
 print(mylist)
 
