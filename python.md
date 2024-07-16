@@ -116,7 +116,96 @@ output: <class 'str'>
         <class 'int'>
         <class 'float'>
 
-***code 4***
 - integers: +ve, -ve, 0
 - string: "ananyaa", "hello"
-- float: 3.99, 2.50, 
+- float: 3.99, 2.50,
+
+
+
+- python has 4 built-in data structures that can be used to hold a collection of objects, 
+they are list, tuple, set, and dictionary.
+- they can be changeable, unchangeable, set type and mapping respectivly
+- collection is a single varible used to store muliple values
+    - lists = [] ordered and changeable, duplicates are okay
+    - sets = {} unordered and unchangeable but, can add or remove elements. no duplicates
+    - tuple = () ordered and unchangeable. its faster and duplicates are okay
+
+- definition of lists: a list is a data structure in python that is a mutable, or changeable, ordered sequence of elements.
+- why do we use lists: lists are great to use when you want to work with many related values. they enable you to keep data together that belongs together, condense your code, and perform the same methods and operations on multiple values at once.
+- what are the use cases of lists: python's list is a flexible, versatile, powerful, and popular built-in data type. it allows you to create variable-length and mutable sequences of objects. in a list, you can store objects of any type. you can also mix objects of different types within the same list, although list elements often share the same type
+
+***code 1*** running through the list
+names = ["anna", "tommy", "ken", "barbie"]
+
+for name in names:
+    print(name)
+
+output: 
+anna
+tommy
+ken
+barbie
+
+=== Code Execution Successful ===
+
+***code 2*** changing one of the elements in the list 
+names = ["anna", "tommy", "ken", "barbie"]
+
+names[0] = "arjhun"
+
+for name in names:
+   print(name)
+   
+output: 
+arjhun
+tommy
+ken
+barbie
+
+=== Code Execution Successful ===
+
+***code 3*** removing one of the elements
+names = ["anna", "tommy", "ken", "barbie"]
+
+names.remove("anna")
+print(names)
+
+output: 
+['tommy', 'ken', 'barbie']
+
+=== Code Execution Successful ===
+
+***code 3***append a name
+names = ["anna", "tommy", "ken", "barbie"]
+
+names.append("john")
+print(names)
+
+output: 
+['anna', 'tommy', 'ken', 'barbie', 'john']
+
+***code 4*** removing an element
+names = ["anna", "tommy", "ken", "barbie"]
+
+names.remove("ken")
+print(names)
+
+output: 
+['anna', 'tommy', 'barbie']
+
+=== Code Execution Successful ===
+
+***code 5*** sorting lists
+numbers = [1, 7, 9, 4, 2]
+
+numbers.sort()
+print(numbers)
+
+output: 
+[1, 2, 4, 7, 9]
+
+=== Code Execution Successful ===
+
+
+
+
