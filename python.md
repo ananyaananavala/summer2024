@@ -132,7 +132,8 @@ they are list, tuple, set, and dictionary.
 
 - definition of lists: a list is a data structure in python that is a mutable, or changeable, ordered sequence of elements.
 - why do we use lists: lists are great to use when you want to work with many related values. they enable you to keep data together that belongs together, condense your code, and perform the same methods and operations on multiple values at once.
-- what are the use cases of lists: python's list is a flexible, versatile, powerful, and popular built-in data type. it allows you to create variable-length and mutable sequences of objects. in a list, you can store objects of any type. you can also mix objects of different types within the same list, although list elements often share the same type
+- what are the use cases of lists: suitable for ordered collections where frequent additions and removals are needed.
+
 
 ***code 1*** running through the list
 names = ["anna", "tommy", "ken", "barbie"]
@@ -175,7 +176,7 @@ output:
 
 === Code Execution Successful ===
 
-***code 3***append a name
+***code 4***append a name
 names = ["anna", "tommy", "ken", "barbie"]
 
 names.append("john")
@@ -184,7 +185,7 @@ print(names)
 output: 
 ['anna', 'tommy', 'ken', 'barbie', 'john']
 
-***code 4*** removing an element
+***code 5*** removing an element
 names = ["anna", "tommy", "ken", "barbie"]
 
 names.remove("ken")
@@ -195,7 +196,7 @@ output:
 
 === Code Execution Successful ===
 
-***code 5*** sorting lists
+***code 6*** sorting lists
 numbers = [1, 7, 9, 4, 2]
 
 numbers.sort()
@@ -206,6 +207,101 @@ output:
 
 === Code Execution Successful ===
 
+***code 7*** inserting values
+names = ["anna", "tommy", "ken", "barbie"]
 
+names.insert(0, "joy")
+print(names)
+
+output: 
+['joy', 'anna', 'tommy', 'ken', 'barbie']
+
+=== Code Execution Successful ===
+
+- definition of sets: a set is a data collection type used in python for storing multiple items in a single variable. sets in python are unordered and, as such, are not always consistent in the order they get returned.
+- why do we use sets: when you need a collection of unique items for fast membership tests.
+- what are the use cases of sets: great for collections of unique items, useful for membership testing and set operations.
+
+***code 1*** running through the set
+names = {"anna", "tommy", "ken", "barbie"}
+
+for name in names:
+    print(name)
+
+output: 
+ken
+anna
+barbie
+tommy
+
+=== Code Execution Successful ===
+
+***code 2*** adding a value in the set
+names = {"anna", "tommy", "ken", "barbie"}
+names.add("joy")
+print(names)
+
+output: 
+{'ken', 'tommy', 'barbie', 'joy', 'anna'}
+
+=== Code Execution Successful ===
+
+***code 3*** remove an element
+names = {"anna", "tommy", "ken", "barbie"}
+names.remove("anna")
+print(names)
+
+output:
+{'barbie', 'ken', 'tommy'}
+
+=== Code Execution Successful ===
+
+***code 3*** combing the two sets 
+set1 = {1,5,3,4}
+set2 = {1,9,6,2}
+union_set = set1.union(set2)
+print(union_set)
+
+output: 
+{1, 2, 3, 4, 5, 6, 9}
+
+=== Code Execution Successful ===
+
+***code 4*** finding the similar elements between set 1 and set 2
+set1 = {1,5,3,4}
+set2 = {1,9,6,2}
+intersection_set = set1.intersection(set2)
+print(intersection_set)
+
+output: 
+{1}
+
+=== Code Execution Successful ===
+
+***code 5*** finding the difference from set 1 to set 2
+set1 = {1,5,3,4}
+set2 = {1,9,6,2}
+difference_set = set1.difference(set2)
+print(difference_set)
+
+output: 
+{3, 4, 5}
+
+=== Code Execution Successful ===
+
+***code 6*** finding the symmetric difference
+set1 = {1,5,3,4}
+set2 = {1,9,6,2}
+symmetric_difference_set = set1.symmetric_difference(set2)
+print(symmetric_difference_set)
+
+output: 
+{2, 3, 4, 5, 6, 9}
+
+=== Code Execution Successful ===
+
+- definition of tuples: tuples are ordered, unchangable collections of items. ttems can be of any type.
+- why do we use tuples: we use tuples when you need an ordered collection that should not change.
+- what are the use cases of tuples: ideal for fixed collections of items that shouldn't change, such as coordinates.
 
 
