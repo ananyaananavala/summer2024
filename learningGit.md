@@ -41,7 +41,11 @@ some essential things you should be aware of:
   will operate on. the git push command is used to upload content to a remote repository. the git fetch
   command can be confused with git pull .
 
-
+downloaded git on mac
+naveennanavala@Ananyaas-MacBook-Pro ~ % git --version
+git version 2.15.0
+naveennanavala@Ananyaas-MacBook-Pro ~ % git config --global user.name "Ananyaa Nanavala" 
+naveennanavala@Ananyaas-MacBook-Pro ~ % git config --global user.email "ananyaa.0116@gmail.com"
 
 
 
