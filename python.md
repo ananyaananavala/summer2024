@@ -129,6 +129,8 @@ they are list, tuple, set, and dictionary.
     - lists = [] ordered and changeable, duplicates are okay
     - sets = {} unordered and unchangeable but, can add or remove elements. no duplicates
     - tuple = () ordered and unchangeable. its faster and duplicates are okay
+    - dictonaries = a collection of {key: value} pairs which are ordered and changeable. no duplicates
+
 
 - definition of lists: a list is a data structure in python that is a mutable, or changeable, ordered sequence of elements.
 - why do we use lists: lists are great to use when you want to work with many related values. they enable you to keep data together that belongs together, condense your code, and perform the same methods and operations on multiple values at once.
@@ -304,36 +306,47 @@ output:
 - why do we use tuples: we use tuples when you need an ordered collection that should not change.
 - what are the use cases of tuples: ideal for fixed collections of items that shouldn't change, such as coordinates(gps).
 
-***code 1***
+***code 1*** creating a tuple 
+student = ("ananyaa", 17, "computer science")
+print(student)
 
+output: 
+('ananyaa', 17, 'computer science')
 
+=== Code Execution Successful ===
 
+***code 2*** accesing tuple elements
+student = ("ananyaa", 17, "computer science")
+name = student[0]
+age = student[1]
+major = student[2]
 
+print(name)
+print(age)
+print(major)
 
+output: 
+ananyaa
+17
+computer science
 
+=== Code Execution Successful ===
 
+***code 3*** unpacking the element in the tuple
+student = ("ananyaa", 17, "computer science")
 
+name, age, major = student
 
+print(name)
+print(age)
+print(major)
 
+output: 
+ananyaa
+17
+computer science
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+=== Code Execution Successful ===
 
 differences between collections
 - mutability(changeable):
