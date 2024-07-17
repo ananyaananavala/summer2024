@@ -348,6 +348,149 @@ computer science
 
 === Code Execution Successful ===
 
+- definition of dictonaries: unordered collections of key-value pairs. keys are unique and changeable.
+- why do we use dictonaries: when you need a collection of unique keys mapped to values for fast lookups, mostly used for pair values.
+- what are the use cases of dictonaries: best for key-value pairs, useful for fast lookups and data mappings.
+
+***code 1*** creating a dictonary
+capitals = {"usa" : "washington d.c",
+            "india" : "new dehli", 
+            "china" : "beijing", 
+            "russia" : "moscow"}
+print(capitals.get("usa"))
+
+output: 
+washington d.c
+
+=== Code Execution Successful ===
+
+***code 2*** asking the code for a country that is not in the list 
+capitals = {"usa" : "washington d.c",
+            "india" : "new dehli", 
+            "china" : "beijing", 
+            "russia" : "moscow"}
+print(capitals.get("japan"))
+
+output: 
+None
+
+=== Code Execution Successful ===
+
+***code 3*** modifying code 2
+capitals = {"usa" : "washington d.c",
+            "india" : "new dehli", 
+            "china" : "beijing", 
+            "russia" : "moscow"}
+
+if capitals.get("japan"):
+    print("that capital exits")
+else: 
+    print("that capital doesn't exist")
+
+output: 
+that capital doesn't exist
+
+=== Code Execution Successful ===
+
+***code 4*** checking for a capital that exsits in the dictonary
+capitals = {"usa" : "washington d.c",
+            "india" : "new dehli", 
+            "china" : "beijing", 
+            "russia" : "moscow"}
+
+if capitals.get("india"):
+    print("that capital exits")
+else: 
+    print("that capital doesn't exist")
+
+output: 
+that capital exits
+
+=== Code Execution Successful === 
+
+***code 5*** updating the dictonary
+capitals = {"usa" : "washington d.c",
+            "india" : "new dehli", 
+            "china" : "beijing", 
+            "russia" : "moscow"}
+
+capitals.update({"germany" : "berlin"})
+capitals.update({"usa" : "alaska"})
+print(capitals)
+
+output:
+{'usa': 'alaska', 'india': 'new dehli', 'china': 'beijing', 'russia': 'moscow', 'germany': 'berlin'}
+
+=== Code Execution Successful ===
+
+***code 6*** deleting one of the elements
+capitals = {"usa" : "washington d.c",
+            "india" : "new dehli", 
+            "china" : "beijing", 
+            "russia" : "moscow"}
+
+capitals.pop("china")
+print(capitals)
+
+output: 
+{'usa': 'washington d.c', 'india': 'new dehli', 'russia': 'moscow'}
+
+=== Code Execution Successful ===
+
+***code 7*** printing only the keys
+capitals = {"usa" : "washington d.c",
+            "india" : "new dehli", 
+            "china" : "beijing", 
+            "russia" : "moscow"}
+
+keys = capitals.keys()
+print(keys)
+
+output: 
+dict_keys(['usa', 'india', 'china', 'russia'])
+
+=== Code Execution Successful ===
+
+***code 8*** printing only the keys using for statement
+capitals = {"usa" : "washington d.c",
+            "india" : "new dehli", 
+            "china" : "beijing", 
+            "russia" : "moscow"}
+
+keys = capitals.keys()
+
+for key in capitals.keys():
+    print(key)
+
+output: 
+usa
+india
+china
+russia
+
+=== Code Execution Successful ===
+
+***code 9*** printing only values using for statement
+capitals = {"usa" : "washington d.c",
+            "india" : "new dehli", 
+            "china" : "beijing", 
+            "russia" : "moscow"}
+
+values = capitals.values()
+
+for value in capitals.values():
+    print(value)
+
+output: 
+washington d.c
+new dehli
+beijing
+moscow
+
+=== Code Execution Successful ===
+
+***code 10*** printing keys and values using for statement
+
 differences between collections
 - mutability(changeable):
       mutable: lists, dictionaries, sets.
@@ -358,6 +501,38 @@ differences between collections
 - uniqueness:
       unique items: sets, dictionary keys.
       non-unique items: lists, tuples, dictionary values.
+
+***code 11*** printing items in the dictonary
+capitals = {"usa" : "washington d.c",
+            "india" : "new dehli", 
+            "china" : "beijing", 
+            "russia" : "moscow"}
+
+items = capitals.items()
+print(items)
+
+output: 
+dict_items([('usa', 'washington d.c'), ('india', 'new dehli'), ('china', 'beijing'), ('russia', 'moscow')])
+
+=== Code Execution Successful ===
+
+***code 12*** printing items in the dictonary using for statement
+capitals = {"usa" : "washington d.c",
+            "india" : "new dehli", 
+            "china" : "beijing", 
+            "russia" : "moscow"}
+
+
+for key, value in capitals.items():
+    print(f"{key} : {value}")
+
+ouput: 
+usa : washington d.c
+india : new dehli
+china : beijing
+russia : moscow
+
+=== Code Execution Successful ===
 
   
 - performance
