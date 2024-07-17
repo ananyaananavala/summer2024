@@ -300,8 +300,70 @@ output:
 
 === Code Execution Successful ===
 
-- definition of tuples: tuples are ordered, unchangable collections of items. ttems can be of any type.
+- definition of tuples: tuples are ordered, unchangable collections of items. items can be of any type.
 - why do we use tuples: we use tuples when you need an ordered collection that should not change.
-- what are the use cases of tuples: ideal for fixed collections of items that shouldn't change, such as coordinates.
+- what are the use cases of tuples: ideal for fixed collections of items that shouldn't change, such as coordinates(gps).
+
+***code 1***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+differences between collections
+- mutability(changeable):
+      mutable: lists, dictionaries, sets.
+      immutable: tuples.
+- order:
+      ordered: lists, tuples.
+      unordered: dictionaries, sets.
+- uniqueness:
+      unique items: sets, dictionary keys.
+      non-unique items: lists, tuples, dictionary values.
+
+  
+- performance
+    - lists
+         - accessing elements: fast and efficient. you can quickly get any item by its index.
+         - appending: adding an item to the end of the list is generally very fast.
+         - inserting/removing in the middle: slow. if you add or remove items from the middle, it can take a lot of time because items may             need to be shifted.
+    - tuples
+         - accessing elements: just as fast as lists.
+         - fixed size: since tuples can't be changed (immutable), they are slightly faster for reading data.
+         - usage: best for fixed collections of items that don’t need to change.
+    - dictionaries
+         - lookups: very fast. finding an item by its key takes very little time.
+         - insertions/deletions: also very fast. adding or removing key-value pairs is quick.
+         - keys: the keys must be unique and hashable (like strings and numbers).
+    - sets
+         - add/remove/check membership: very fast. adding items, removing items, or checking if an item is in the set is quick.
+         - unique items: sets automatically ensure all items are unique.
+         - items: the items must be unique and hashable (like strings and numbers).
+
 
 
